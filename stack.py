@@ -16,3 +16,7 @@ class Stack:
     def pop(self):
         if self.is_empty():
             raise IndexError('pop from empty array')
+
+    def peek(self):
+        if self.is_empty():
+            raise IndexError('peep from empty array')
