@@ -16,7 +16,7 @@ class Stack:
         if self.is_empty():
             raise IndexError('pop from empty array')
         else:
-            return self.items[0]
+            return self.items.pop(0)
 
     def peek(self):
         if self.is_empty():
@@ -26,22 +26,3 @@ class Stack:
 
     def push(self, item):
         self.items.insert(0,item)
-
-
-	    #  def __init__(self):
-	    #      self.items = []
-	
-	    #  def is_empty(self):
-	    #      return self.items == []
-	
-	    #  def push(self, item):
-	    #      self.items.insert(0,item)
-	
-	    #  def pop(self):
-	    #      return self.items.pop(0)
-	
-	    #  def peek(self):
-	    #      return self.items[0]
-	
-	    #  def size(self):
-	    #      return len(self.items)
