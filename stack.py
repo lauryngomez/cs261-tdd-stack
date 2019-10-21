@@ -4,14 +4,13 @@
 
 
 class Stack:
-    DEFAULT_CAPACITY = 0
 
-    def __init__(self, value = IndexError):
-        self.capacity = self.DEFAULT_CAPACITY
-        self.value = value
+
+    def __init__(self):
+        self.items = []
     
     def is_empty(self):
-        return True
+        return self.items == []
 
     def pop(self):
         if self.is_empty():
@@ -20,3 +19,8 @@ class Stack:
     def peek(self):
         if self.is_empty():
             raise IndexError('peep from empty array')
+        else:
+            return self.items[0]
+
+    def push(self, item):
+        self.items.insert(0,item)
