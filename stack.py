@@ -10,7 +10,7 @@ class Stack:
         self.items = []
     
     def is_empty(self):
-        return self.items == []
+        return len(self.items) == 0
 
     def pop(self):
         if self.is_empty():
